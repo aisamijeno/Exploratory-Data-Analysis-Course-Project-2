@@ -44,9 +44,7 @@ You can read each of the two files using the `readRDS()` function in R. For exam
 
 `plot2.PNG` and `plot2.R` - a PNG and script to generate the file for the second graph.
 
-`plot3a.PNG` and `plot3a.R` - a PNG and script to generate the file for the third graph.
-
-`plot3b.PNG` and `plot3b.R` - a PNG and script to generate the file for the third graph.
+`plot3.PNG` and `plot3.R` - a PNG and script to generate the file for the third graph.
 
 `plot4.PNG` and `plot4.R` - a PNG and script to generate the file for the fourth graph.
 
@@ -81,13 +79,9 @@ You must address the following questions and tasks in your exploratory analysis.
 
 ![PLOT 2](https://i.ibb.co/hg0yYbs/plot2.png)
 
-**PLOT 3a**
+**PLOT 3**
 
-![PLOT 3a](https://i.ibb.co/QP113Sh/plot3.png)
-
-**PLOT 3b**
-
-![PLOT 3b](https://i.ibb.co/g4gvkHT/plot3b.png)
+![PLOT 3](https://i.ibb.co/QP113Sh/plot3.png)
 
 **PLOT 4**
 
