@@ -31,8 +31,6 @@ subsetNEI  <- NEI[NEI$fips=="24510", ]
 
 aggregatedTotalByYearAndType <- aggregate(Emissions ~ year + type, subsetNEI, sum)
 
-
-
 png("plot3.png", width=640, height=480)
 g <- ggplot(aggregatedTotalByYearAndType, aes(year, Emissions, color = type))
 g <- g + geom_line() +

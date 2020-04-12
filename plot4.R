@@ -33,8 +33,6 @@ subsetNEISCC <- NEISCC[coalMatches, ]
 
 aggregatedTotalByYear <- aggregate(Emissions ~ year, subsetNEISCC, sum)
 
-
-
 png("plot4.png", width=640, height=480)
 g <- ggplot(aggregatedTotalByYear, aes(factor(year), Emissions))
 g <- g + geom_bar(stat="identity") +
