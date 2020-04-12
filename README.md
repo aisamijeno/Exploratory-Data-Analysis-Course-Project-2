@@ -18,29 +18,23 @@ The data for this assignment are available from the course web site as a single 
 
 The zip file contains two files:
 
-PM2.5 Emissions Data (\color{red}{\verb|summarySCC_PM25.rds|}summarySCC_PM25.rds): This file contains a data frame with all of the PM2.5 emissions data for 1999, 2002, 2005, and 2008. For each year, the table contains number of tons of PM2.5 emitted from a specific type of source for the entire year. Here are the first few rows.
+PM2.5 Emissions Data (**summarySCC_PM25.rds**): This file contains a data frame with all of the PM2.5 emissions data for 1999, 2002, 2005, and 2008. For each year, the table contains number of **tons** of PM2.5 emitted from a specific type of source for the entire year. Here are the first few rows.
 
-* fips: A five-digit number (represented as a string) indicating the U.S. county
-\color{red}{\verb|SCC|}
+* `fips`: A five-digit number (represented as a string) indicating the U.S. county
 
-* SCC: The name of the source as indicated by a digit string (see source code classification table)
-\color{red}{\verb|Pollutant|}
+* `SCC`: The name of the source as indicated by a digit string (see source code classification table)
 
-* Pollutant: A string indicating the pollutant
-\color{red}{\verb|Emissions|}
+* `Pollutant`: A string indicating the pollutant
 
-* Emissions: Amount of PM2.5 emitted, in tons
-\color{red}{\verb|type|}
+* `Emissions`: Amount of PM2.5 emitted, in tons
 
-* type: The type of source (point, non-point, on-road, or non-road)
-\color{red}{\verb|year|}
+* `type`: The type of source (point, non-point, on-road, or non-road)
 
-* year: The year of emissions recorded
+* `year`: The year of emissions recorded
 
-Source Classification Code Table (\color{red}{\verb|Source_Classification_Code.rds|}Source_Classification_Code.rds): This table provides a mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source. The sources are categorized in a few different ways from more general to more specific and you may choose to explore whatever categories you think are most useful. For example, source “10100101” is known as “Ext Comb /Electric Gen /Anthracite Coal /Pulverized Coal”.
+Source Classification Code Table (**Source_Classification_Code.rds**): This table provides a mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source. The sources are categorized in a few different ways from more general to more specific and you may choose to explore whatever categories you think are most useful. For example, source “10100101” is known as “Ext Comb /Electric Gen /Anthracite Coal /Pulverized Coal”.
 
-You can read each of the two files using the \color{red}{\verb|readRDS()|}readRDS() function in R. For example, reading in each file can be done with the following code:
-
+You can read each of the two files using the `readRDS()` function in R. For example, reading in each file can be done with the following code:
 
 #### **Files in GitHub Repository**
 ****
@@ -50,48 +44,61 @@ You can read each of the two files using the \color{red}{\verb|readRDS()|}readRD
 
 `plot2.PNG` and `plot2.R` - a PNG and script to generate the file for the second graph.
 
-`plot3.PNG` and `plot3.R` - a PNG and script to generate the file for the third graph.
+`plot3a.PNG` and `plot3a.R` - a PNG and script to generate the file for the third graph.
+
+`plot3b.PNG` and `plot3b.R` - a PNG and script to generate the file for the third graph.
 
 `plot4.PNG` and `plot4.R` - a PNG and script to generate the file for the fourth graph.
 
+`plot5.PNG` and `plot5.R` - a PNG and script to generate the file for the fifth graph.
+
+`plot6.PNG` and `plot6.R` - a PNG and script to generate the file for the sixth graph.
+
 #### **Project Description**
 ****
-The following descriptions of the 9 variables in the dataset are taken from the UCI web site:
+You must address the following questions and tasks in your exploratory analysis. For each question/task you will need to make a single plot. Unless specified, you can use any plotting system in R to make your plot.
 
-* `Date:` Date in format dd/mm/yyyy
+1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 
-* `Time:` time in format hh:mm:ss
+2. Have total emissions from PM2.5 decreased in the *Baltimore City*, Maryland (**fips=="24510"**) from 1999 to 2008? Use the *base* plotting system to make a plot answering this question.
 
-* `Global_active_power:` household global minute-averaged active power (in kilowatt)
+3. Of the four types of sources indicated by the **type** (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for *Baltimore City*? Which have seen increases in emissions from 1999–2008? Use the *ggplot2* plotting system to make a plot answer this question.
 
-* `Global_reactive_power:` household global minute-averaged reactive power (in kilowatt)
+4. Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
 
-* `Voltage:` minute-averaged voltage (in volt)
+5. How have emissions from motor vehicle sources changed from 1999–2008 in *Baltimore City*?
 
-* `Global_intensity:` household global minute-averaged current intensity (in ampere)
-
-* `Sub_metering_1:` energy sub-metering No. 1 (in watt-hour of active energy). It corresponds to the kitchen, containing mainly a dishwasher, an oven and a microwave (hot plates are not electric but gas powered).
-
-* `Sub_metering_2:` energy sub-metering No. 2 (in watt-hour of active energy). It corresponds to the laundry room, containing a washing-machine, a tumble-drier, a refrigerator and a light.
-
-* `Sub_metering_3:` energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.
+6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in *Los Angeles County*, California (**fips=="06037"**). Which city has seen greater changes over time in motor vehicle emissions?
 
 #### **Final Output**
 ****
 
 **PLOT 1**
 
-![PLOT 1](https://i.ibb.co/mcscHSt/plot1.png)
+![PLOT 1](https://i.ibb.co/W2kBSyK/plot1.png)
 
 **PLOT 2**
 
-![PLOT 2](https://i.ibb.co/JvB9MYL/plot2.png)
+![PLOT 2](https://i.ibb.co/hg0yYbs/plot2.png)
 
-**PLOT 3**
+**PLOT 3a**
 
-![PLOT 3](https://i.ibb.co/1J1xVC7/plot3.png)
+![PLOT 3a](https://i.ibb.co/QP113Sh/plot3.png)
+
+**PLOT 3b**
+
+![PLOT 3b](https://i.ibb.co/g4gvkHT/plot3b.png)
 
 **PLOT 4**
 
-![PLOT 4](https://i.ibb.co/8mrVDFR/plot4.png)
+![PLOT 4](https://i.ibb.co/1dYNdsF/plot4.png)
+
+**PLOT 5**
+
+![PLOT 5](https://i.ibb.co/WnJxH5b/plot5.png)
+
+**PLOT 6**
+
+![PLOT 6](https://i.ibb.co/LDKw0ZQ/plot6.png)
+
 
