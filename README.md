@@ -38,19 +38,19 @@ You can read each of the two files using the `readRDS()` function in R. For exam
 
 #### **Files in GitHub Repository**
 ****
-`README.md` - a readme file that explain about the project.
+* `README.md` - a readme file that explain about the project.
 
-`plot1.PNG` and `plot1.R` - a PNG and script to generate the file for the first graph.
+* `plot1.PNG` and `plot1.R` - a PNG and script to generate the file for the first graph.
 
-`plot2.PNG` and `plot2.R` - a PNG and script to generate the file for the second graph.
+* `plot2.PNG` and `plot2.R` - a PNG and script to generate the file for the second graph.
 
-`plot3.PNG` and `plot3.R` - a PNG and script to generate the file for the third graph.
+* `plot3.PNG` and `plot3.R` - a PNG and script to generate the file for the third graph.
 
-`plot4.PNG` and `plot4.R` - a PNG and script to generate the file for the fourth graph.
+* `plot4.PNG` and `plot4.R` - a PNG and script to generate the file for the fourth graph.
 
-`plot5.PNG` and `plot5.R` - a PNG and script to generate the file for the fifth graph.
+* `plot5.PNG` and `plot5.R` - a PNG and script to generate the file for the fifth graph.
 
-`plot6.PNG` and `plot6.R` - a PNG and script to generate the file for the sixth graph.
+* `plot6.PNG` and `plot6.R` - a PNG and script to generate the file for the sixth graph.
 
 #### **Project Description**
 ****
